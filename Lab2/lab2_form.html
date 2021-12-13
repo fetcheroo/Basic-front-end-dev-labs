@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru-ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Пример формы HTML5</title>
+        <style>
+            form {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-auto-rows: 30px;
+                gap: 10px;
+            }
+            .full-width {grid-column: 1/5;}
+            .first-half {grid-column: 1/3;}
+            .three-quarters {grid-column: 2/5;}
+            fieldset {
+                grid-column: 4;
+                display:grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+                border-style: none;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="#" autocomplete="off" method="post" enctype="multipart/form-data" target="_self">
+            <label class="first-half" for="identification">Identification Number:</label>
+			<input class="first-half" id="identification" type="text">
+            <label class="full-width" for="name">Legal Name:</label>
+			<input class="full-width" id="name" type="text">
+            <label class="full-width" for="address1">Address 1:</label>
+			<input class="full-width" id="address1" type="text">
+            <label class="full-width" for="address2">Address 2:</label>
+			<input class="full-width" id="address2" type="text">
+
+            <label for="city">City:</label>
+            <label for="state">State:</label>
+            <label for="zip">ZIP:</label>
+            <label for="countries">Cuntries:</label>
+			<input id="city" type="text">
+			<input id="state" type="text">
+			<input id="zip" type="text">
+            <select id="countries">
+                <optgroup label="Africa">
+                    <option>People's Democratic Republic of Algeria</option>
+                    <option>Republic of Angola</option>
+                    <option>Republic of Benin</option>
+                    <option>Republic of Botswana</option>
+                    <option>Republic of Burundi</option>
+                    <option>Republic of Cameroon</option>
+                    <option>Republic of Cabo Verde</option>
+                    <option>Republic of Chad</option>
+                    <option>Union of the Comoros</option>
+                    <option>Republic of Djibouti</option>
+                    <option>Republic of Equatorial Guinea</option>
+                    <option>State of Eritrea</option>
+                    <option>Kingdom of Eswatini</option>
+                    <option>Federal Democratic Republic of Ethiopia</option>
+                    <option>Gabonese Republic</option>
+                    <option>Republic of the Gambia</option>
+                    <option>Republic of Ghana</option>
+                    <option>Republic of Guinea-Bissau</option>
+                    <option>Republic of Côte d'Ivoire</option>
+                    <option>Republic of Kenya</option>
+                    <option>Kingdom of Lesotho</option>
+                    <option>Republic of Liberia</option>
+                    <option>State of Libya</option>
+                    <option>Republic of Madagascar</option>
+                    <option>Republic of Malawi</option>
+                    <option>Republic of Mali</option>
+                    <option>Islamic Republic of Mauritania</option>
+                    <option>Republic of Mauritius</option>
+                    <option>Kingdom of Morocco</option>
+                    <option>Republic of Mozambique</option>
+                    <option>Republic of Namibia</option>
+                    <option>Republic of the Niger</option>
+                    <option>Federal Republic of Nigeria</option>
+                    <option>Republic of Rwanda</option>
+                    <option>Democratic Republic of Sao Tome and Principe</option>
+                    <option>Republic of Senegal</option>
+                    <option>Republic of Seychelles</option>
+                    <option>Republic of Sierra Leone</option>
+                    <option>Federal Republic of Somalia</option>
+                    <option>Republic of South Africa</option>
+                    <option>Republic of South Sudan</option>
+                    <option>Republic of the Sudan</option>
+                    <option>United Republic of Tanzania</option>
+                    <option>Togolese Republic</option>
+                    <option>Tunisian Republic</option>
+                    <option>Republic of Uganda</option>
+                    <option>Republic of Zambia</option>
+                    <option>Republic of Zimbabwe</option>
+                </optgroup>
+                <optgroup label="Australia and Oceania">
+                    <option>Australia</option>
+                    <option>Fiji</option>
+                    <option>New Zealand</option>
+                    <option>Federated States of Micronesia</option>
+                    <option>Kiribati</option>
+                    <option>Marshall Islands</option>
+                    <option>Nauru</option>
+                    <option>Palau</option>
+                    <option>Papua New Guinea</option>
+                    <option>Samoa</option>
+                    <option>Solomon Islands</option>
+                    <option>Tonga</option>
+                    <option>Tuvalu</option>
+                    <option>Vanuatu</option>
+                </optgroup>
+                <optgroup label="Asia">
+                    <option>Islamic Republic of Afghanistan</option>
+                    <option>Republic of Armenia</option>
+                    <option>Kingdom of Bahrain</option>
+                    <option>People's Republic of Bangladesh</option>
+                    <option>Kingdom of Bhutan</option>
+                    <option>Republic of India</option>
+                    <option>Islamic Republic of Iran</option>
+                    <option>Republic of Iraq</option>
+                    <option>State of Israel</option>
+                    <option>Hashemite Kingdom of Jordan</option>
+                    <option>Democratic People's Republic of Korea</option>
+                    <option>Republic of Korea</option>
+                    <option>State of Kuwait</option>
+                    <option>Kyrgyz Republic</option>
+                    <option>Lebanese Republic</option>
+                    <option>Republic of Maldives</option>
+                    <option>Federal Democratic Republic of Nepal</option>
+                    <option>Sultanate of Oman</option>
+                    <option>Islamic Republic of Pakistan</option>
+                    <option>State of Qatar</option>
+                    <option>Kingdom of Saudi Arabia</option>
+                    <option>Democratic Socialist Republic of Sri Lanka</option>
+                    <option>Syrian Arab Republic</option>
+                    <option>Republic of Tajikistan</option>
+                    <option>Republic of Uzbekistan</option>
+                    <option>Republic of Yemen</option>
+                </optgroup>
+                <optgroup label="Europe">
+                    <option>Albania</option>
+                    <option>Andorra</option>
+                    <option>Austria</option>
+                    <option>Belarus</option>
+                    <option>Belgium</option>
+                    <option>Bosnia and Herzegovina</option>
+                    <option>Bulgaria</option>
+                    <option>Croatia</option>
+                    <option>Cyprus</option>
+                    <option>Czech Republic</option>
+                    <option>Denmark</option>
+                    <option>Estonia</option>
+                    <option>Finland</option>
+                    <option>France</option>
+                    <option>Georgia</option>
+                    <option>Germany</option>
+                    <option>Greece</option>
+                    <option>Hungary</option>
+                    <option>Iceland</option>
+                    <option>Republic of Ireland</option>
+                    <option>Italy</option>
+                    <option>Kosovo</option>
+                    <option>Latvia</option>
+                    <option>Liechtenstein</option>
+                    <option>Lithuania</option>
+                    <option>Luxembourg</option>
+                    <option>North Macedonia</option>
+                    <option>Malta</option>
+                    <option>Moldova</option>
+                    <option>Monaco</option>
+                    <option>Montenegro</option>
+                    <option>Netherlands</option>
+                    <option>Norway</option>
+                    <option>Poland</option>
+                    <option>Portugal</option>
+                    <option>Romania</option>
+                    <option>Russia</option>
+                    <option>San Marino</option>
+                    <option>Serbia</option>
+                    <option>Slovakia</option>
+                    <option>Slovenia</option>
+                    <option>Spain</option>
+                    <option>Sweden</option>
+                    <option>Switzerland</option>
+                    <option>Turkey</option>
+                    <option>Ukraine</option>
+                    <option>United Kingdom</option>
+                    <option>Vatican City</option>
+                </optgroup>
+                <optgroup label="North America">
+                    <option>Canada</option>
+                    <option>Mexico</option>
+                    <option>United States of America</option>
+                    <option>Navassa Island</option>
+                    <option>Puerto Rico</option>
+                    <option>US Virgin Islands</option>
+                    <option>Dominican Republic</option>
+                    <option>Cuba</option>
+                    <option>Haiti</option>
+                    <option>Belize</option>
+                    <option>Costa Rica</option>
+                    <option>El Salvador</option>
+                    <option>Guatemala</option>
+                    <option>Honduras</option>
+                    <option>Guadeloupe</option>
+                    <option>Martinique</option>
+                    <option>Nicaragua</option>
+                    <option>Panama</option>
+                    <option>Trinidad and Tobago</option>
+                    <option>Jamaica</option>
+                </optgroup>
+                <optgroup label="SEA">
+                    <option>Brunei</option>
+                    <option>Cambodia</option>
+                    <option>East Timor</option>
+                    <option>Indonesia</option>
+                    <option>Laos</option>
+                    <option>Malaysia</option>
+                    <option>Myanmar</option>
+                    <option>Philippines</option>
+                    <option>Singapore</option>
+                    <option>Thailand</option>
+                    <option>Vietnam</option>
+                </optgroup>
+                <optgroup label="South America">
+                    <option>Argentina</option>
+                    <option>Bolivia</option>
+                    <option>Bouvet Island</option>
+                    <option>Brazil</option>
+                    <option>Chile</option>
+                    <option>Colombia</option>
+                    <option>Ecuador</option>
+                    <option>Falkland Islands</option>
+                    <option>French Guiana</option>
+                    <option>Guyana</option>
+                    <option>Paraguay</option>
+                    <option>Peru</option>
+                    <option>Suriname</option>
+                    <option>Uruguay</option>
+                    <option>Venezuela</option>
+                </optgroup>
+            </select>
+            
+            <label for="phone">Phone:</label>
+            <label class="three-quarters" for="email">Email:</label>
+			<input id="phone" type="text">
+			<input class="three-quarters" id="email" type="email">
+
+            <fieldset>
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </body>
+</html>
